@@ -1,6 +1,8 @@
-![1725907864826](image/README/1725907864826.png)
+![1725908574543](image/README/1725908574543.png)
 
-# Weather App
+
+
+Weather App
 
 ## This application displays real-time weather information using the [OpenWeather API](https://openweathermap.org/api). Built with Express.js and EJS, the app provides a simple and user-friendly interface for viewing current weather conditions.
 
