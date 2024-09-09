@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Weader App</h1>
+    <% if(locals.weather) { %>
+        <div class="container">
+            <h2><%= weather.name %>, <%= weather.sys.country %></h2>
+            <img src="https://openweathermap.org/img/wn/<%= weather.weather[0].icon %>@2x.png" alt="<%= weather.weather[0].description %>">
+            <p><strong>Temperature: </strong><%= Math.floor(weather.main.temp) %>&deg;</p>
+            <p><strong>Weather: </strong><%= weather.weather[0].description %></p>
+            <p><strong>Wind: </strong><%= weather.wind.speed %> km/h</p>
+        </div>
+    <% } else { %>
+        <h2><%= error %></h2>
+    <% } %>
+        
+</body>
+</html>
